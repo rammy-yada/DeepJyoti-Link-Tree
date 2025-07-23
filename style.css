@@ -1,0 +1,115 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  max-width: 150px;
+  height: auto;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-out forwards;
+  margin-bottom: 20px;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+#main-content {
+  padding: 20px;
+}
+
+.links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Space between icon and text */
+
+  margin: 15px auto;
+  padding: 12px 20px;
+  width: 80%;
+  max-width: 300px;
+  color: #fff; /* White text for all buttons */
+  text-decoration: none;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transition for hover effects */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Default background for safety if a specific link isn't styled */
+  background: #6c757d; /* A neutral gray */
+}
+
+/* Specific button styles */
+
+/* Instagram */
+.links a[href*="instagram.com"] {
+  /* Instagram Gradient */
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+}
+.links a[href*="instagram.com"]:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.25);
+  /* Slightly more intense gradient or subtle glow if desired */
+}
+
+/* Facebook */
+.links a[href*="facebook.com"] {
+  background: #1877F2; /* Facebook Blue */
+}
+.links a[href*="facebook.com"]:hover {
+  background: #166FE5; /* Darker Facebook Blue on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* TikTok */
+.links a[href*="tiktok.com"] {
+  background: #000; /* TikTok Black */
+  /* Could add a subtle shadow effect with brand colors like #69C9D0 and #EE1D52 */
+}
+.links a[href*="tiktok.com"]:hover {
+  background: #333; /* Slightly lighter black on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* DeepJyoti Website - Using a Deep Blue */
+.links a[href*="deepjyotiwatertank.com"] {
+  background: #0D47A1; /* Deep Blue, like a water tank */
+}
+.links a[href*="deepjyotiwatertank.com"]:hover {
+  background: #0A3A8E; /* Darker Deep Blue on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* WhatsApp */
+.links a[href*="wa.me"] {
+  background: #25D366; /* WhatsApp Green */
+}
+.links a[href*="wa.me"]:hover {
+  background: #1DA851; /* Darker WhatsApp Green on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Style for the icons inside the links */
+.links a i {
+  font-size: 1.2em; /* Adjust icon size as needed */
+  /* No specific color here as button background changes */
+}
+
+footer {
+    margin-top: 40px;
+    color: #888;
+    font-size: 0.9em;
+}
